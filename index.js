@@ -31,7 +31,7 @@ export default () => {
 
     })();
     (async () => {
-        const u = `${baseUrl}/ocean.glb`;
+        const u = `${baseUrl}./ocean.glb`;
         const ocean = await new Promise((accept, reject) => {
             const {gltfLoader} = useLoaders();
             gltfLoader.load(u, accept, function onprogress() {}, reject);
